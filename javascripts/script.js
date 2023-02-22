@@ -7,7 +7,7 @@ const minus = document.getElementById("-");      // ДОЖДАЛСЯ
 const div = document.getElementById("/");        // ДОЖДАЛСЯ
 const multi = document.getElementById("x");      // ДОЖДАЛСЯ 
 const agr = document.getElementById("agr");
-const money = document.getElementById("money");
+
 const audio = new Audio("./audio/agr_theme.mp3");
 // ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz
 let fN = false;
@@ -22,7 +22,6 @@ for (let i = 0; i < num.length; i++) {
     let s = num[i].value;
 
     if (result.innerHTML.length > 9) {
-      resq.style.margin = "0 65px 0 0";
       return (result.innerHTML = result.innerHTML.length - 10);
     }
     if (isNaN(Number(num[i].value))) {
@@ -89,10 +88,6 @@ for (let i = 0; i < num.length; i++) {
     } else {
       ass.innerHTML = "C";
     }
-    if (result.innerHTML.length === 10) {
-      resq.style.margin = "0 50px 0 0";
-    }
-    console.log("1: " + firstValue + "  2: " + secondValue);
   });
 }
 function getSign(signs) {
@@ -254,10 +249,7 @@ agr.addEventListener("click", (q) => {
     return (aplay = false);
   }
 });
-money.addEventListener("click", (w) => {
-  money.style.fontSize = "100%";
-  money.style.height = "2vh";
-});
+
 
 // ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz
 // ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz
