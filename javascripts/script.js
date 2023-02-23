@@ -2,10 +2,10 @@
 const result = document.getElementById("resq");
 const resq = document.getElementById("result");
 const num = document.querySelectorAll(".item");
-const plus = document.getElementById("+");       // ДОЖДАЛСЯ
-const minus = document.getElementById("-");      // ДОЖДАЛСЯ
-const div = document.getElementById("/");        // ДОЖДАЛСЯ
-const multi = document.getElementById("x");      // ДОЖДАЛСЯ 
+const plus = document.getElementById("+"); // ДОЖДАЛСЯ
+const minus = document.getElementById("-"); // ДОЖДАЛСЯ
+const div = document.getElementById("/"); // ДОЖДАЛСЯ
+const multi = document.getElementById("x"); // ДОЖДАЛСЯ
 const agr = document.getElementById("agr");
 
 const audio = new Audio("./audio/agr_theme.mp3");
@@ -37,7 +37,7 @@ for (let i = 0; i < num.length; i++) {
             break;
           case "+/-":
             result.innerHTML *= -1;
-            secondValue *= -1
+            secondValue *= -1;
             break;
         }
       }
@@ -81,6 +81,7 @@ for (let i = 0; i < num.length; i++) {
           resetStyle("x", false);
           getFirstNum();
         }
+        
       }
     }
     if (secondValue === 0 && firstValue === 0) {
@@ -88,6 +89,7 @@ for (let i = 0; i < num.length; i++) {
     } else {
       ass.innerHTML = "C";
     }
+    console.log("1: " + firstValue + "  2: " + secondValue);
   });
 }
 function getSign(signs) {
@@ -150,7 +152,7 @@ function getSecondNum() {
 function resultPls() {
   switch (sign) {
     case "/":
-      result.innerHTML = Math.round((firstValue / secondValue) * 10000) / 100;
+      result.innerHTML = Math.round((firstValue / secondValue) * 10000) / 10000;
       alSign = true;
       resetStyle("x", false);
       break;
@@ -249,7 +251,6 @@ agr.addEventListener("click", (q) => {
     return (aplay = false);
   }
 });
-
 
 // ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz
 // ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz ShitCoderz
